@@ -1,0 +1,30 @@
+header.options {
+    background: #32746D;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+button {
+    margin: 0 20px;
+    font-family: sans-serif;
+    border: none;
+    background: white;
+    padding: 5px 10px;
+    color: #111;
+    transition: background 100ms;
+}
+
+button:hover {
+    background: #b2dfdb;
+}
+
+td.block {
+    border: 1px solid #32746D;
+}
