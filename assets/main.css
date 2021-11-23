@@ -1,14 +1,19 @@
+:root {
+    --main-color: #32746D;
+}
+
 header.options {
-    background: #32746D;
+    background: var(--main-color);
     padding: 10px 30px;
     display: flex;
     justify-content: center;
 }
 
 table {
-    width: 95%;
+    width: min(95vw, 100vh);
     border-collapse: collapse;
     margin: 20px auto;
+    border: 2px solid var(--main-color);
 }
 
 button {
@@ -23,8 +28,4 @@ button {
 
 button:hover {
     background: #b2dfdb;
-}
-
-td.block {
-    border: 1px solid #32746D;
 }

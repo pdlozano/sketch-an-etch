@@ -12,7 +12,7 @@ class Color {
     }
 
     generate = async () => {
-        const opacity = Math.round(Math.random() * 100) / 100;
+        const opacity = Math.round(Math.random() * 100 + 25) / 100;
         const color = [this.red, this.green, this.blue, opacity];
         this.element.style.backgroundColor = `rgba(${color.join(',')})`;
     }
@@ -36,8 +36,6 @@ function createTable(size) {
 
         Array(size).fill(null).map(() => {
             const column = document.createElement('td');
-            column.classList.add("block");
-
             const div = document.createElement('div');
 
             column.style.width = `calc(100% / ${size})`;
